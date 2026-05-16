@@ -11,7 +11,13 @@ import org.springframework.web.servlet.HandlerInterceptor;
 
 import java.util.UUID;
 
-import static com.projects.client_service.common.Constants.*;
+import static com.projects.client_service.common.Constants.TRACE_ID_HEADER;
+import static com.projects.client_service.common.Constants.USER_UUID_HEADER;
+import static com.projects.client_service.common.Constants.UUID_PATTERN;
+import static com.projects.client_service.common.Constants.USER_UUID_PATTERN;
+import static com.projects.client_service.common.Constants.TRACE_ID_MDC_KEY;
+import static com.projects.client_service.common.Constants.USER_UUID_MDC_KEY;
+import static com.projects.client_service.common.Constants.ANONYMOUS;
 
 @Slf4j
 @Component
